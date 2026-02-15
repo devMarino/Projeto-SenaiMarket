@@ -1,5 +1,10 @@
-import { View } from "react-native";
+import { Button, Text, View } from "react-native";
 
 export default function DetalheScreen() {
-    <View>DETALHES</View>
+    <View>
+        <Text>Detalhes</Text>
+    </View>
+
+    
+
 }

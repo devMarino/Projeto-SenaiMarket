@@ -7,12 +7,12 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 const Tab = createBottomTabNavigator();
 // tab navigation (main)
 
-function Main (){
+function Main ({navigation}){
     return  (
         <Tab.Navigator>
-            <Tab.Screen name="Home" component={HomeStack}/> {/* telas detalhes,vitrines*/}
-            <Tab.Screen name="Carrinho" component={ CarrinhoScreen}/> {/* tela de carrinho*/}
-            <Tab.Screen name="Perfil" component={PerfilScreen} /> {/* tela de perfil*/}
+            <Tab.Screen name="Home" component={HomeStack}/>
+            <Tab.Screen name="Carrinho" component={ CarrinhoScreen}/> 
+            <Tab.Screen name="Perfil" component={PerfilScreen}/> 
         </Tab.Navigator>
     )
 }

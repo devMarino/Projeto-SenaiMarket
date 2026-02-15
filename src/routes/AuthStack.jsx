@@ -3,9 +3,10 @@ import LoginScreen from "./Screens/LogInScreen";
 const Stack = createNativeStackNavigator()
 
 function AuthStack(){
+    // tela de login
     return(
     <Stack.Navigator>
-        <Stack.Screen name="Login" component={LoginScreen} /> {/* Tela de Login*/}
+        <Stack.Screen name="Login" component={LoginScreen}/>
     </Stack.Navigator>
     )
 
