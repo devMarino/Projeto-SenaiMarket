@@ -1,6 +1,9 @@
-import { Button, View } from "react-native";
+import { StatusBar, Text, View } from "react-native";
 import Formulario from "../../components/Formulario";
+import Footer from "../../components/Footer";
 import { StyleSheet } from "react-native";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import HeaderOrgs from "../../components/HeaderOrgs";
 
 
 export default function LoginScreen({navigation}) {
@@ -10,16 +13,28 @@ export default function LoginScreen({navigation}) {
         navigation.navigate('Main')
 }
         return(
-        <View style={styles.container}>
-        <Formulario
-        onAdicionarFormulario={IdentificarLogin}
-        />
-    </View>
+            <SafeAreaProvider>
+            <SafeAreaView  style={styles.container}>
+            <StatusBar/>
+                <HeaderOrgs/>
+                <View style={styles.conteudo}>
+                {/* component formulario */}
+                    <Formulario onAdicionarFormulario={IdentificarLogin}/>
+                </View>
+                <Footer/>
+            </SafeAreaView>
+        </SafeAreaProvider>
+        
     )
 }
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
-    }
+        flex: 1,
+    },
+    conteudo: {
+        flex: 1,
+        justifyContent: 'center',
+        
+    },
 })

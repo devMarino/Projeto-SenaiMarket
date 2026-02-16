@@ -32,59 +32,85 @@ export default function Formulario({onAdicionarFormulario}){
     }
 
     return(
-        <View style={styles.container}>
-            <View style={styles.inputBox}>
-                <Text style={styles.label}>Email:</Text>
+    <View style={styles.container}>
+        <View style={styles.subContainer}>
+            <View style={styles.formulario}>
+                <Text style={styles.login}>Login</Text>
+                <View style={styles.inputDiv}>
                 <TextInput
-                placeholder="emailExample@gmail.com"
-                onChangeText={(text) => inputChanges('email', text)}
-                value={formData.email}
-                style={styles.input}
+                    placeholder="emailExample@gmail.com"
+                    onChangeText={(text) => inputChanges('email', text)}
+                    value={formData.email}
+                    style={styles.input}
                 />
-            </View>
-            <View style={styles.inputBox}>
-                <Text style={styles.label}>Senha:</Text>
-                <TextInput
-                placeholder="digite sua senha"
-                onChangeText={(text) => inputChanges('password', text)}
-                value={formData.password}
-                style={styles.input}
-                />
-            </View>
-
-            <View>
-                <TouchableOpacity onPress={handleCadastrar} style={styles.button}>
-                    <Text style={styles.textButton}>salvar</Text>
-                </TouchableOpacity>
+                </View>
+                <View style={styles.inputDiv}>
+                    <TextInput
+                    placeholder="digite sua senha"
+                    onChangeText={(text) => inputChanges('password', text)}
+                    value={formData.password}
+                    style={styles.input}
+                    />
+                </View>
+                <View>
+                    <TouchableOpacity onPress={handleCadastrar} style={styles.button}>
+                        <Text style={styles.textButton}>salvar</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         </View>
+    </View>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#e5e4e4',
     },
-    inputBox: {
-        textAlign: 'center',
-        backgroundColor: '#01556f79',
-        flexDirection: 'row',
-        borderWidth: 1, borderColor: '#000', borderStyle: 'solid',
-        margin: 30
+    subContainer: {
+        alignItems: 'center',
+        justifyContent: 'center',  
+
+    },
+    formulario: {
+        backgroundColor: '#FFFFFF',
+        width: '90%',
+        elevation: 5,
+        margin: 10,
+        padding: 5,
+        borderWidth: 1, borderColor: '#003366', borderStyle: 'solid'
+    },
+    inputDiv: {
+        maxwidth: '100%',
+        padding: 8,
+        backgroundColor: '#FFFFFF',
+        borderWidth: 1, borderColor: '#003366', borderStyle: 'solid',
+        borderRadius: 2
     },
     input: {
-        width: '100%',
-        height: '300'
+        width: '100%'
     },
     button: {
-        backgroundColor: '#000000',
+        backgroundColor: '#0055ff',
+        padding: 12,
+        borderRadius:2,
+        marginTop: 10,
         borderWidth: 1,
-        borderColor: '#fff',
-        borderStyle: 'solid'
+        borderColor: '#00000069',
+        borderStyle: 'solid',
+        padding:18
     },
     textButton:{
-        color: '#fff'
+        textAlign: 'center',
+        color: '#fff',
+        fontSize: 20,
+        fontWeight: 'bold'
+    },
+    login: {
+        padding: 5,
+        fontSize: 30,
+        color: '#0061c2f1',
+        fontWeight: 'bold',
+        textAlign: 'left',
     }
-
 })
