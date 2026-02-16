@@ -19,7 +19,7 @@ export default function LoginScreen({navigation}) {
                 <HeaderOrgs/>
                 <View style={styles.conteudo}>
                 {/* component formulario */}
-                    <Formulario onAdicionarFormulario={IdentificarLogin}/>
+                <Formulario onAdicionarFormulario={IdentificarLogin}/>
                 </View>
                 <Footer/>
             </SafeAreaView>
