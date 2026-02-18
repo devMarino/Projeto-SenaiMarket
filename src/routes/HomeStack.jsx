@@ -12,7 +12,10 @@ function HomeStack(){
         component={VitrineScreen}
         options={{headerShown: false}}
         />
-        {/* <Stack.Screen name="Detalhe" component={DetalheScreen}/> */}
+        <Stack.Screen name="Detalhe" 
+        component={DetalheScreen}
+        options={{headerShown: false}}
+        />
     </Stack.Navigator>
     )
 }

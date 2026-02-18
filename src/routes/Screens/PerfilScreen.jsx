@@ -1,5 +1,11 @@
-import { View } from "react-native";
+import { Text, View } from "react-native";
 
 export default function PerfilScreen() {
-    <View>PERFIL</View>
+    return(
+        <View>
+            <Text>Perfil</Text>
+    
+        </View>
+
+    )
 }

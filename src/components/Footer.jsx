@@ -5,7 +5,7 @@ export default function Footer(){
 
         <View style={styles.container}>
             <Text style={styles.textContainer}>© 2026 SenaiMarket • Desenvolvido por DevMarino</Text>
-    </View>
+        </View>
 
 )
 }

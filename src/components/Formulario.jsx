@@ -42,11 +42,12 @@ export default function Formulario({onAdicionarFormulario}){
                     onChangeText={(text) => inputChanges('email', text)}
                     value={formData.email}
                     style={styles.input}
-                />
+                    />
                 </View>
                 <View style={styles.inputDiv}>
                     <TextInput
                     placeholder="digite sua senha"
+                    secureTextEntry
                     onChangeText={(text) => inputChanges('password', text)}
                     value={formData.password}
                     style={styles.input}
@@ -81,7 +82,7 @@ const styles = StyleSheet.create({
         borderWidth: 1, borderColor: '#003366', borderStyle: 'solid'
     },
     inputDiv: {
-        maxwidth: '100%',
+        maxWidth: '100%',
         padding: 8,
         backgroundColor: '#FFFFFF',
         borderWidth: 1, borderColor: '#003366', borderStyle: 'solid',

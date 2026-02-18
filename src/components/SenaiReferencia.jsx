@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function HeaderOrgs(){
+export default function SenaiReferencia(){
     return(
         <View style={styles.container}>
             <Text style={styles.text}>FIEC</Text>

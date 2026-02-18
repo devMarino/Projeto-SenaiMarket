@@ -1,11 +1,14 @@
 import { Text, View } from "react-native";
 
-export default function DetalheScreen( {item}) {
+export default function DetalheScreen( {route}) {
+
+    const {PRODUTOS} = route.params;
+    return(
     <View>
         <Text>Detalhes</Text>
-        <Text>{item.nome}</Text>
+        <Text>{PRODUTOS.nome}</Text>
     </View>
-
+    )
     
 
 }

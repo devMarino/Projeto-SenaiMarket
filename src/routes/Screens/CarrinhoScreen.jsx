@@ -1,5 +1,12 @@
-import { View } from "react-native";
+import { Text, View } from "react-native";
+
 
 export default function CarrinhoScreen() {
-    <View>Carrinho</View>
+    return(
+    <View>
+        <Text>carrinho</Text>
+
+    </View>
+
+    )
 }

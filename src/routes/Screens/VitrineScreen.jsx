@@ -2,7 +2,7 @@ import { FlatList, Pressable, StatusBar, StyleSheet, View } from "react-native";
 import PRODUTOS from "../../data/bancoDados";
 import Card from "../../components/Card";
 import HeaderVitrine from "../../components/HeaderVitrine";
-import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView } from "react-native-safe-area-context";
 export default function VitrineScreen({navigation}){
     return(
         <SafeAreaView style={styles.container}>

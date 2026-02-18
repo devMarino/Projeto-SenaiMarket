@@ -3,7 +3,8 @@ import Formulario from "../../components/Formulario";
 import Footer from "../../components/Footer";
 import { StyleSheet } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
-import HeaderOrgs from "../../components/HeaderOrgs";
+import SenaiReferencia from "../../components/SenaiReferencia";
+
 
 
 export default function LoginScreen({navigation}) {
@@ -16,10 +17,10 @@ export default function LoginScreen({navigation}) {
             <SafeAreaProvider>
             <SafeAreaView  style={styles.container}>
             <StatusBar/>
-                <HeaderOrgs/>
+                <SenaiReferencia/>
                 <View style={styles.conteudo}>
                 {/* component formulario */}
-                <Formulario onAdicionarFormulario={IdentificarLogin}/>
+                    <Formulario onAdicionarFormulario={IdentificarLogin}/>
                 </View>
                 <Footer/>
             </SafeAreaView>
