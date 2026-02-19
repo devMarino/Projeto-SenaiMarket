@@ -11,7 +11,7 @@ export default function LoginScreen({navigation}) {
     
     const IdentificarLogin = (dados) => {
         console.log("Usuário logado: ", dados)
-        navigation.navigate('Main')
+        navigation.replace('Main')
 }
         return(
             <SafeAreaProvider>

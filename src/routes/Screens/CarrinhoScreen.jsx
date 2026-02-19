@@ -5,7 +5,6 @@ export default function CarrinhoScreen() {
     return(
     <View>
         <Text>carrinho</Text>
-
     </View>
 
     )

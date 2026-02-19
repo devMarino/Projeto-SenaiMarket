@@ -5,7 +5,7 @@ import { StyleSheet } from 'react-native';
 
 export default function App() {
   return (
-    <NavigationContainer style={styles.container}>
+    <NavigationContainer>
       <Router/> 
     </NavigationContainer>
   );

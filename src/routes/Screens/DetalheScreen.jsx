@@ -7,6 +7,7 @@ export default function DetalheScreen( {route}) {
     <View>
         <Text>Detalhes</Text>
         <Text>{PRODUTOS.nome}</Text>
+        <Text>{PRODUTOS.preco}</Text>
     </View>
     )
     
